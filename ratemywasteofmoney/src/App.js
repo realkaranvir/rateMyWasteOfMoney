@@ -8,7 +8,8 @@ function App() {
     { id: 1, name: "Tesla Model S", rating: 4.5 },
     { id: 2, name: "Ford Mustang", rating: 4.2 },
     { id: 3, name: "Chevrolet Camaro", rating: 3.9 },
-    { id: 4, name: "2018 Audi Q7 3.0T Premium Plus", rating: 4.1},
+    { id: 4, name: "2018 Audi Q7 3.0T Premium Plus", rating: 4.1 },
+    { id: 5, name: "2016 Audi Q7 3.0T Premium Plus", rating: 3.7 },
   ];
 
   // State for the selected car and rating input
@@ -40,12 +41,14 @@ function App() {
           {cars.map((car) => (
             <div
               key={car.id}
-              className={`car-item ${selectedCar?.id === car.id ? "selected" : ""}`}
+              className={`car-item ${
+                selectedCar?.id === car.id ? "selected" : ""
+              }`}
               onClick={() => setSelectedCar(car)}
             >
               <h3>{car.name}</h3>
               <h3>Id: {car.id}</h3>
-              
+
               <p>Current Rating: {car.rating} stars</p>
             </div>
           ))}
