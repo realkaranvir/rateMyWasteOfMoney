@@ -1,3 +1,64 @@
-.mydiv{
-  font-weight: bold;
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+.car-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.car-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.car-item.selected {
+  border-color: #007bff;
+}
+
+.rating-section {
+  margin-top: 20px;
+}
+
+.rating-section input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2300e7;
 }
